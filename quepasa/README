@@ -1,16 +1,31 @@
 
+
+
 Mon Jan 20 16:49:18 2014
 
+
 This is the initial working free release of Quepasa, a grammar based
-parser/unparser that's convenient to use.  Will add a link to the
-source tarball that this all came from, soon.  Thanks to ITA Software
-and Google for releasing the code and Fare for getting it out.
+parser/unparser that's convenient to use.  Thanks to ITA Software and
+Google for releasing the code and to Faré (fahree gmail com) for
+getting it out.
 
-To try it, fire up slime and enter:
+There is a mailing list for this project at:
 
-  (asdf:load-system :quepasa :force T)
+  http://common-lisp.net/projects/qitab/
+
+On that page there is a link to the initial code release that this
+code came from:
+
+  http://common-lisp.net/project/qitab/archives/quux-2013-09-24.tar.bz2
+
+To try Quepasa, fire up SBCL[1] and enter:
+
+  (asdf:operate 'asdf:load-op 'quepasa :force T)
   (in-package QUEPASA)
   (run-quepasa-grammar-unit-tests :lambda-expression)
+
+
+[1] Probably works on CMUCL too, at least it did at one time.
 
 
 End of README
